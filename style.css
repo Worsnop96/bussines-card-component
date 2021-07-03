@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+.container {
+  /*Main card*/
+  /*Organization of the blocks*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  /*Text content box*/
+  /*Dimensions and Organization*/
+  width: 600px;
+  height: 495px;
+  padding: 70px 60px 60px 75px;
+  /*Style*/
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 8px 0px 0px 8px;
+}
+.title-1 {
+  /*H1 style*/
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter";
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.phrase {
+  /*Phrase in the H1 element*/
+  color: hsl(277, 64%, 61%);
+}
+.comments {
+  /*Main paragraph in the box*/
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca";
+  font-size: 17px;
+  padding-right: 100px;
+  line-height: 28px;
+}
+.cover {
+  /*Image box*/
+  /*Dimensions and style*/
+  width: 600px;
+  height: 495px;
+  border-radius: 0px 8px 8px 0px;
+  /*Image and style*/
+  background-image: url("./images/image-header-desktop.jpg");
+  background-size: cover;
+  box-shadow: inset 0 0 0 600px rgba(99, 20, 148, 0.6);
+}
+.stats {
+  /*Style of the stats space*/
+  margin-top: 80px;
+  list-style: none;
+  display: flex;
+}
+.it {
+  /*Stats elements*/
+  margin-right: 80px;
+}
+.title-2 {
+  /*Stats titles*/
+  font-size: 30px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+  font-family: "Inter";
+}
+.desc {
+  /*Stat description*/
+  font-family: "Lexend Deca";
+  text-transform: uppercase;
+  color: hsla(0, 0%, 100%, 0.6);
+  letter-spacing: 1px;
+}
+@media (max-width: 1024px) {
+  /*Mobile version*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    /*Organization */
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .box {
+    /*Text content box*/
+    margin: 0;
+    padding: 40px 20px;
+    width: 350px;
+    height: 600px;
+    border-radius: 0px 0px 8px 8px;
+  }
+  .cover {
+    /*Image box*/
+    width: 350px;
+    height: 310px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .title-1 {
+    /*H1 style*/
+    text-align: center;
+    font-size: 30px;
+  }
+  .title-2 {
+    /*Stats titles*/
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .comments {
+    /*Main paragraph in the box*/
+    text-align: center;
+    font-size: 15px;
+    padding: 0px 20px;
+  }
+  .stats {
+    /*Style of the stats space*/
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .it {
+    /*Stats elements*/
+    text-align: center;
+    margin: 0px;
+  }
+  .desc {
+    /*Stat description*/
+    font-size: 15px;
+  }
+}
